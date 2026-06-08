@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="app_name">Mosaico de captura de pantalla</string>
+    <string name="app_version_title">Versión: %1$s</string>
+    <string name="added_tile_info">Se agregó a la barra de estado un acceso directo que permite realizar una captura de pantalla.\n\nPara usarlo, simplemente edite la configuración de los mosaicos y muévalo a la posición deseada.\n\nHaga clic en el mosaico para realizar una captura de la pantalla.\n\nTenga en cuenta que el color y fuente del mosaico dependerán de su versión de Android y del tema que hayan aplicado usted o el fabricante del teléfono.</string>
+    <string name="take_screenshot">Capturar pantalla</string>
+    <string name="accept_button">Aceptar</string>
+    <string name="accessibility_service_title">Servicio de accesibilidad</string>
+    <string name="accessibility_service_description">El servicio de accesibilidad es obligatorio para realizar capturas de pantalla en Android PIE (API 28) y siguientes.</string>
+    <string name="allow_accessibility_service_permission">Permitir acceso a servicio de accesibilidad</string>
+    <string name="delay_before_start_screen_capture_title">Retraso antes de hacer la captura</string>
+    <string name="delay_before_start_screen_capture_description">Seleccione el retraso antes de realizar la captura de pantalla.\n\nRecomendamos establecer el retraso en al menos 600 milisegundos para dar tiempo a que se cierre la cortinilla de notificaciones antes de que se realice la captura, si bien el tiempo mínimo necesario dependerá de su dispositivo concreto.</string>
+    <string name="milliseconds_value">%1$d ms</string>
+    <string name="grant_accessibility_permission_confirmation_message">Esta app necesita disponer del permiso de accesibilidad para poder funcionar.\n\nPulse el botón \"aceptar\" para abrir la pantalla de gestión del permiso de accesibilidad o el botón \"cancelar\" para cerrar este diálogo sin otorgar el permiso de accesibilidad.</string>
+    <string name="cancel">Cancelar</string>
+    <string name="information">Información</string>
+    <string name="vibrate_on_capture_title">Vibrar al hacer la captura</string>
+    <string name="vibrate_on_capture_description">Vibrar muy ligeramente cuando se realice la captura de pantalla.</string>
+    <string name="tile_active_background_title">Colorear el fondo de la pastilla</string>
+    <string name="tile_active_background_description">Colorear el fondo de la pastilla cuando sea posible realizar la captura.</string>
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="github_repo">https://github.com/ryosoftware/take-screenshot-tile</string>
+
+    <string name="delay_before_take_screenshot_default">800</string>
+
+</resources>

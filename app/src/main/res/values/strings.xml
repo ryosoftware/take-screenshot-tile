@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="app_name">Take screenshot Tile</string>
+    <string name="app_version_title">Version: %1$s</string>
+    <string name="added_tile_info">A quick tile was added to the statusbar to take a screenshot.\n\nTo use it edit the mosaics then move the take screenshot tile to the desired position.\n\nClick on the tile to take a screenshot.\n\nKeep in mind that the color and font of the mosaic will depend on your Android version and the theme that you or the phone manufacturer is using.</string>
+    <string name="take_screenshot">Take screenshot</string>
+    <string name="accept_button">Accept</string>
+    <string name="accessibility_service_title">Accessibility service</string>
+    <string name="accessibility_service_description">Accessibility service is mandatory to allow to take screenshots on Android Pie (API 28) and higher.</string>
+    <string name="allow_accessibility_service_permission">Grant accessibility service permission</string>
+    <string name="delay_before_start_screen_capture_title">Delay before start screen capture</string>
+    <string name="delay_before_start_screen_capture_description">Select the delay before taking the screenshot.\n\nWe recommend a delay to at least 600 milliseconds to allow time for the notifications list to be closed before the screenshot is taken, although the minimum time required will depend on your specific device.</string>
+    <string name="milliseconds_value">%1$d ms</string>
+    <string name="grant_accessibility_permission_confirmation_message">This app requires accessibility permission to work properly.\n\nPress the \"Accept\" button to open the accessibility permission management screen or the \"Cancel\" button to close this dialog without granting accessibility permission.</string>
+    <string name="cancel">Cancel</string>
+    <string name="information">Information</string>
+    <string name="vibrate_on_capture_title">Vibrate on capture</string>
+    <string name="vibrate_on_capture_description">Vibrate briefly when a screenshot is taken.</string>
+    <string name="tile_active_background_title">Tile active background</string>
+    <string name="tile_active_background_description">Show the tile with a colored background when accessibility is granted.</string>
+
+</resources>
