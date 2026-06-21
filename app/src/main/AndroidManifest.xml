@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.ryosoftware.take_screenshot_tile">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ryosoftware.take_screenshot_tile">
 
-    <uses-permission android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS" />
+    <uses-permission android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"
+        tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
-    <application android:name="com.ryosoftware.take_screenshot_tile.Main" android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:supportsRtl="true">
+    <application android:name="com.ryosoftware.take_screenshot_tile.Main" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:supportsRtl="true">
 
-        <activity android:name="com.ryosoftware.take_screenshot_tile.MainActivity" android:label="@string/app_name" android:excludeFromRecents="true" android:theme="@style/AppTheme" android:exported="true">
+        <activity android:name="com.ryosoftware.take_screenshot_tile.MainActivity" android:excludeFromRecents="true" android:theme="@style/AppTheme" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
