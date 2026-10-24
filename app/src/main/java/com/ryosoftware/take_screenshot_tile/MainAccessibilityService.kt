@@ -17,6 +17,7 @@ import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import kotlin.time.Duration.Companion.milliseconds
 
 @SuppressLint("AccessibilityPolicy")
 class MainAccessibilityService : AccessibilityService() {
@@ -25,7 +26,10 @@ class MainAccessibilityService : AccessibilityService() {
 
     override fun onAccessibilityEvent(event: AccessibilityEvent?) {}
     override fun onInterrupt() {}
-    override fun onServiceConnected() {}
+
+    override fun onServiceConnected() {
+        MainTileService.requestListeningState(this)
+    }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         intent?.action?.let { action ->
@@ -43,7 +47,7 @@ class MainAccessibilityService : AccessibilityService() {
                     if (delay > 0) {
                         scope.launch {
                             Log.d(BuildConfig.TAG, "Waiting for $delay ms before taking screenshot")
-                            delay(delay)
+                            delay(delay.milliseconds)
                             actionBlock()
                         }
                     } else {
@@ -71,6 +75,7 @@ class MainAccessibilityService : AccessibilityService() {
 
     override fun onDestroy() {
         scope.cancel()
+        MainTileService.requestListeningState(this)
         super.onDestroy()
     }
 

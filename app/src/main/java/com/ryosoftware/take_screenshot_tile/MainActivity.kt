@@ -211,6 +211,7 @@ private fun MainScreen() {
                         ApplicationPreferences.TILE_ACTIVE_BACKGROUND_KEY,
                         newValue
                     )
+                    MainTileService.requestListeningState(context)
                 }
             )
 

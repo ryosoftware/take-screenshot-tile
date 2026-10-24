@@ -1,6 +1,7 @@
 package com.ryosoftware.take_screenshot_tile
 
 import android.content.ComponentName
+import android.content.Context
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
 import android.util.Log
@@ -50,6 +51,14 @@ class MainTileService : TileService() {
         if (MainAccessibilityService.isAccessibilityServiceEnabled(this)) {
             MainAccessibilityService.dismissNotificationShade(this)
             MainAccessibilityService.takeScreenshot(this)
+        }
+    }
+
+    companion object {
+        fun requestListeningState(context: Context) {
+            val component = ComponentName(context.packageName, MainTileService::class.java.name)
+
+            requestListeningState(context, component)
         }
     }
 }
